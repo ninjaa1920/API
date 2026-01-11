@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("/images/wp7554791.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px 60px;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.text {
+  font-weight: 600;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.but {
+  border-radius: 10px;
+  background-color: aquamarine;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+}
+.but:hover {
+  background-color: #6fffd2;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <section class="box">
+    <% if(locals.name&&locals.bounty){%>
+        <p class="text">Character:<%= name %>
+            <br>
+           Bounty: <%= bounty %>
+        </p>
+    <%}else{%>
+        <h2 class="text">One Piece Character Generator</h2>
+    <%}%>
+        <form action="/unlock" method="POST">
+            <button class="but" type="submit">Generate</button>
+        </form>
+    </section>
+</body>
+</html>
